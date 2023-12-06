@@ -1,0 +1,149 @@
+body {
+    height: 100svh;
+    margin: 0;
+    background-color: rgb(235, 235, 235);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+    background-color: #FFE382;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    z-index: 1;
+    gap: 15px;
+}
+
+
+
+.containter button.login {
+    justify-self: start;
+}
+button {
+    all: unset;
+    font-weight: bold;
+    cursor: pointer;
+    height: 50%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form button {
+    width: 100%;
+    height: 100%;
+}
+
+form button:hover, form button:focus {
+    background-color: lightgrey;
+    width: 100%;
+    height: 100%;
+}
+
+.header button:hover {
+    background-color: #fae9ac;
+    align-items: start;
+}
+
+.header h1{
+    padding-left: 6%;
+
+}
+.card-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5%;
+    padding: 5%;
+    position: relative;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    font-size: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.card.read {
+    border-left: 5px solid lightgreen;
+    
+}
+
+.read-button {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.read-button:hover {
+    content: "Read";
+}
+
+
+.book-title {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+
+.book-author {
+    margin-top: 0;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.book-author::before {
+    content: "By: ";
+}
+
+
+.book-pages {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.book-pages::before {
+    content: "Pages: ";
+}
+
+
+form {
+    align-self: center;
+    justify-self: center;
+    display: none;
+    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    grid-area: 2 / 1 / -1 / -1;
+    width: 250px;
+
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    font-size: 1.5rem
+}
+
